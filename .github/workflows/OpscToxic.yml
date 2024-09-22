@@ -1,0 +1,18 @@
+name: Test for OpsCToxic
+on: push
+jobs:
+  my-first-job:
+    name: Test job for OpsCToxic
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "21"
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
