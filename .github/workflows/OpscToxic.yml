@@ -16,3 +16,6 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
+
+      - name: Test the code
+        run: ./gradlew run --args=”OpscToxic”
