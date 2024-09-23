@@ -1,0 +1,10 @@
+name: Test for irmtou
+on: push
+jobs:
+  my-first-job:
+    name: Test job for irmtou
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
