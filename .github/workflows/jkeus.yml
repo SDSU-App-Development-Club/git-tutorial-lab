@@ -2,7 +2,7 @@
 name: Test for jkeus
 on: push
 jobs:
-  my-first-job
+  my-first-job:
     name: Test job for jkeus
     runs-on: ubuntu-latest
     steps:
