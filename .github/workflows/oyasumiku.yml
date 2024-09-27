@@ -1,0 +1,8 @@
+name: Test for oyasumiku
+on: push
+
+jobs:
+  my-first-job:
+    name: Test job for oyasumiku
+on: push
+    runs-on: ubuntu-latest
