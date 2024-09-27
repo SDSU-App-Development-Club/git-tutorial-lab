@@ -1,6 +1,6 @@
 name: Test for izhgh
 on: push
-jobs:
+  jobs:
   my-first-job:
     name: Test job for iZhGH
     runs-on: ubuntu-latest
