@@ -18,4 +18,4 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: Test the code
-	run: ./gradlew run --args="igower"
+        run: ./gradlew run --args="igower"
