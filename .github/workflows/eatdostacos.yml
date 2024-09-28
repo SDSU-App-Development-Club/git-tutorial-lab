@@ -1,0 +1,22 @@
+name: Test for eatdostacos
+on: push
+
+jobs:
+  my-first-job:
+    name: Test job for eatdostacos
+    runs-on: ubunut-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Test the code
+        run: ./gradlew run --args="eatdostacos"
