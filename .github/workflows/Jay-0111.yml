@@ -18,4 +18,4 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
         
       - name: Test the code
-        run: ./gradlew run --args=”Jay-0111"
+        run: ./gradlew run --args="Jay-0111"
