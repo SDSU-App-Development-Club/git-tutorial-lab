@@ -3,11 +3,11 @@ on: push
 jobs:
   my-first-job:
     name: Test job for Nico-1824
-    runs-on: ununtu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout respository
 	uses: actions/checkout@v4
-      - name: Setup JAva
+      - name: Setup Java
         uses: actions/setup-java@v4
 	with:
 	  distribution: 'temurin'
